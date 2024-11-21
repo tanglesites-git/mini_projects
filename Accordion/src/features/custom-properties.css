@@ -1,0 +1,17 @@
+:root {
+  --black: black;
+  --white: white;
+
+  [data-theme="dark"] {
+    --primary: hsl(var(--black) / 1);
+    --text-color: hsl(var(--white) / 1);
+  }
+
+  [data-theme="light"] {
+    --text-color: hsl(var(--black) / 1);
+    --primary: hsl(var(--white) / 1);
+  }
+
+  --base-line-height: 1.5;
+  --base-font-size: 16px;
+}

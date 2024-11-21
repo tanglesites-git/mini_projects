@@ -1,0 +1,43 @@
+.ts-code-snippet {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+  & pre {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(45, 42, 47, 1) 36%, rgba(45, 42, 47, 1) 72%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    margin: 0;
+    border-radius: 0;
+    max-height: 600px;
+    overflow-y: scroll;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #ff0000;
+      border-radius: 9999px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
+
+.ts-code-snippet-header {
+  background-color: #2312df;
+  color: whitesmoke;
+  padding: 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}

@@ -1,0 +1,101 @@
+html {
+  font-size: var(--base-font-size);
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin-block: 0;
+  margin-inline: 0;
+  min-height: 100dvh;
+}
+
+body {
+  border: 1px solid red;
+  display: grid;
+  align-items: center;
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: var(--base-line-height);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: -2px;
+  text-indent: 2rem;
+  max-width: 80ch;
+  margin: 1.5rem auto;
+  border-left: 4px solid #333;
+  padding-inline-start: 1rem;
+  transition: border-left 0.2s ease-in-out;
+
+  &:hover {
+    border-left: 4px solid lightslategray;
+  }
+
+  &:hover>.highlight {
+    background-color: #333;
+    color: white;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 100;
+  margin-block: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: calc(1.5 * 2);
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: calc(1.5 * var(--base-line-height));
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: calc(1.5 * var(--base-line-height));
+}
+
+main {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  padding-block: 4rem;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  text-align: center;
+  min-width: 100%;
+
+  & p {
+    border-left: 1px solid transparent;
+  }
+
+}
+
+.highlight {
+  color: inherit;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease-in-out;
+}
